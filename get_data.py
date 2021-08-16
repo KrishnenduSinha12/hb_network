@@ -16,8 +16,10 @@ print("set defer_builds_mode, 4")
 
 print("\n")
 
+cutoff=20
+
 for i in range (1,len(p)):
-    if float(p[i].split()[6]) > 20:
+    if float(p[i].split()[6]) > cutoff:
         if float(p[i].split()[5]) > 0:
             print ("select a," + " " + "resid" + " " + str(p[i].split()[1][3:6])+ " " +" and " +"name CA")
             print ("select b," + " " + "resid" + " " + str(p[i].split()[2][3:6])+ " " +" and " +"name CA")
