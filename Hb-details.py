@@ -99,9 +99,9 @@ Change=abs(Change)
 
 
 df=pd.DataFrame({'Residue-Pair': Residue_pair,
-                 '%WT': WT,
-                 '%SP': SP,
-                 '%Change': change,
+                 '%system1': WT,
+                 '%system2': SP,
+                 '%system2-system1': change,
                  '%Change(absolute)': Change})
 df1=df.sort_values(by=['%Change(absolute)'],ascending=False)
 df1.drop(df1.columns[df.columns.str.contains('unnamed',case=False)],axis=1,inplace=True)
