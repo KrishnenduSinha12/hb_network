@@ -17,7 +17,7 @@
 
 # Changing the parameters:
    1. By default all the H-bond that show occupancy > 10 is reported. For changing the parameter open the hbonding_network.sh file and change the c parameter.
-   2. If any non standard residue is present with 4 letters in your system you need to change it to a 3 letter residue name. for CYSG to CGR.
+   2. If any non standard residue is present with 4 letters in your system you need to change it to a 3 letter residue name. for example CYSG to CGR.
    3. By default the visualization shows only those pairs that have occupancy difference > 20. For changing the parameter open get_data.py file and change the cutoff value
 
 # Bugs:
