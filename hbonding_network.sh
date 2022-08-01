@@ -2,7 +2,7 @@
 
 
 
-python Hb-details.py -f1 hbonds-details2.dat -f2 hbonds-details2.dat -c 25  > HB_details1.dat
+python Hb-details.py -f1 hbonds-details2.dat -f2 hbonds-details1.dat -c 25  > HB_details1.dat
 
 sed "s/-Main/     /g" HB_details1.dat > HB2.dat
 sed -i "s/-Side/     /g" HB2.dat
